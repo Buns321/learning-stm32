@@ -1,0 +1,36 @@
+# Build artifacts
+/build/
+/bin/
+/Debug/
+/Release/
+*.o
+*.elf
+*.bin
+*.hex
+
+# Keil/MDK/ARM
+*.axf
+*.uvproj*
+
+# CubeIDE / Eclipse
+.metadata/
+.project
+.cproject
+
+# IDE/editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.log
+
+# PlatformIO
+.pio/
+
+# Obsidian/notes attachments (keep notes but ignore large attachments)
+00.attachment/
+*.canvas
+
+# OS files
+Thumbs.db
+.DS_Store
