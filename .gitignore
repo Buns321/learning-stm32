@@ -34,3 +34,7 @@
 # OS files
 Thumbs.db
 .DS_Store
+
+# Ignore local helper scripts
+scripts/*.bat
+
