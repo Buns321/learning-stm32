@@ -1,3 +1,5 @@
+﻿## .gitignore for learning-stm32
+
 # Build artifacts
 /build/
 /bin/
@@ -31,11 +33,14 @@
 00.attachment/
 *.canvas
 
+# Private/local folders
+.trash/
+.scripts/
+00.private/
+
 # OS files
 Thumbs.db
 .DS_Store
- .trash
 
-# Ignore local helper scripts
+# Ignore local helper scripts (local .bat helpers)
 scripts/*.bat
-
