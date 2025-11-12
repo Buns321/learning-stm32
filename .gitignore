@@ -34,6 +34,7 @@
 # OS files
 Thumbs.db
 .DS_Store
+ .trash
 
 # Ignore local helper scripts
 scripts/*.bat
