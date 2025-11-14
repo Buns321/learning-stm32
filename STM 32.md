@@ -1,3 +1,6 @@
+
+## 小Tips
+
 ### 如何使用跨文件变量？
 
 在`main.c`文件开头使用`extern nimt16_t Num;`声明即可。
@@ -57,3 +60,64 @@ uint16_t ADC_Get_Value(ADC_HandleTypeDef *hadc) {
 ```
 
 在`.h`里面声明函数时写出这个也是神人了。
+
+### 指针传递时最好用`const`保护
+
+>*意思就是说**别动你爹的指针**。*
+
+### 汉字编码
+
+目前主流的汉字编码格式有两种：
+
+1. [[UTF-8]]（即万国码）
+2. [[GB2312]]（即国标码）
+
+两者都兼容[[ASSIC]]英文编码。
+
+若想令[[GB2312]]编码程序兼容[[UTF-8]]，可在启动配置中加入
+
+```
+--no-multibyte-chars
+```
+
+### `printf`高位补数的方法
+
+`%05%d`，即5位高位补零。
+`%+05%d`，即5位强制显示符号高位补零（其中0也算一位）。
+
+
+
+
+
+
+
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
+lkgkjs;dflgkj dfg dfgdf dfg dfg dfg dfg dfg df dfg df dfg dfg dfg dfg dfg dfg dfg dfg df dfd fd df df dfg df df df 
